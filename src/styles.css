@@ -1,0 +1,57 @@
+body {
+  font-family: sans-serif;
+  width: 80%;
+}
+
+.all-container {
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding: 5px;
+  margin: 20px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0.8;
+    display: inline;
+    transition: ease-in-out;
+    background-color: #2e86de;
+  }
+  to {
+    opacity: 1;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    background-color: #feca57;
+  }
+}
+.coinData {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #feca57;
+  border-radius: 15px;
+  animation: fadeIn 2.5s;
+}
+
+span {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  justify-content: center;
+}
+
+#coinRank,
+#coinName,
+#coinPrice,
+#coinPrice12,
+#coinPrice24,
+#coinUpdate {
+  border-right: 1.5px solid #54a0ff;
+  text-align: center;
+}
+
+#coinPrice {
+  color: #10ac84;
+  font-weight: 550;
+  font-style: oblique;
+}
